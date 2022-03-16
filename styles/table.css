@@ -1,0 +1,20 @@
+table,
+th,
+td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    padding: 1rem;
+    min-width: 100px;
+}
+
+table,
+th {
+    border: none;
+}
+#filter {
+    cursor: pointer;
+}

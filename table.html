@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Recruitment task - frontend intership</title>
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/table.css" />
+        <script src="./js/table.js"></script>
+    </head>
+    <body>
+        <div id="body">
+            <nav>
+                <button onclick="window.location.href='/index.html'">
+                    User
+                </button>
+                <button onclick="window.location.href='/table.html'">
+                    Table
+                </button>
+            </nav>
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th id="filter" onclick="sortByLastName()">Last Name ▼</th>
+                    <th>Nationality</th>
+                    <th id="filter" onclick="sortByRegistrationDate()">
+                        Registry date ▼
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

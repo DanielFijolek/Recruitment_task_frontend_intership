@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Recruitment task - frontend intership</title>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <script src="./js/new_user.js"></script>
+    </head>
+    <body>
+        <div id="body">
+            <nav>
+                <button onclick="window.location.href='/index.html'">
+                    User
+                </button>
+                <button onclick="window.location.href='/table.html'">
+                    Table
+                </button>
+            </nav>
+            <div id="buttonAndCheckbox">
+                <button id="getUser" onclick="getUser()">Get user</button>
+                <div id="checkAddressDiv">
+                    <input type="checkbox" id="checkAddress" />
+                    <label for="checkAddress"> Hide address</label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

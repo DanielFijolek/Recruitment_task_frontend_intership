@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background: rgba(16, 14, 14, 0.946);
+    overflow-x: hidden;
+    color: aqua;
+}
+
+#body {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 550px;
+    align-content: flex-start;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    border-bottom: white 5px dotted;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    all: unset;
+    width: 20rem;
+    height: 4rem;
+    border: 1px aqua solid;
+    border-radius: 5px;
+    text-align: center;
+    text-align: center;
+    color: aqua;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.5rem;
+    transition: text-decoration 1s;
+}
+button:hover {
+    text-decoration: underline;
+    color: white;
+    border: 1px white solid;
+}
+nav > button {
+    width: 40%;
+    height: 5rem;
+}
+
+#buttonAndCheckbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#checkAddressDiv {
+    display: flex;
+    align-items: center;
+
+    margin-left: 1rem;
+    height: 100%;
+}
+#checkAddressDiv > label {
+    cursor: pointer;
+}
+#checkAddressDiv > label:hover {
+    color: white;
+}
+
+#checkAddressDiv > input {
+    cursor: pointer;
+}
+
+.userContainer {
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.userTopRow {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: white 2px solid;
+}
+
+.dataLabel {
+    font-family: "Arial Rounded MT Bold";
+    color: gray;
+    float: left;
+}
+img {
+    max-height: 310px;
+    min-width: 310px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1215px) {
+    .userTopRow {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        border-radius: 10px;
+    }
+    #buttonAndCheckbox {
+        flex-direction: column;
+    }
+    .userContainer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav > button {
+        margin: 0.5rem;
+        width: 50%;
+        height: 4rem;
+    }
+    img {
+        max-height: 250px;
+        min-width: 250px;
+        border-radius: 10px;
+    }
+    .userContainer {
+        width: 80%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    #body {
+        width: 90%;
+    }
+}
